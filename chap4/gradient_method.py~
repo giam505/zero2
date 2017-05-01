@@ -1,0 +1,18 @@
+# coding: UTF-8
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+step = 100                #ステップ数
+lrate = 0.01              #学習率
+h = 1e-4
+
+def targetfunc(x):
+    return 2*x[0]**2 + x[1]
+
+def gradient(f, x):         #関数fの点xにおけるグラディエント
+    for i in range(len(x)):
+        fdot[i] = (f(x+h) - f(x-h)) / (2*h)
+
+    return fdot
+        

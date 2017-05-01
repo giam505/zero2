@@ -1,0 +1,10 @@
+import numpy as np
+
+max = 10
+n = 5
+
+x = np.random.choice(max, n)
+print(x)
+
+y = np.random.choice(max,n,replace=False)
+print(y)
